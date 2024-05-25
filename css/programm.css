@@ -1,0 +1,50 @@
+/*first video css*/
+.video-section {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  margin-top: 0; 
+}
+
+.video-section iframe {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+}
+
+/* second and thired video css */
+
+.second-video,
+.third-video {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.second-video iframe,
+.third-video iframe {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+}
+
+ .head1 ,
+ .head2 ,
+ .head3{
+  color: #cd8b8b;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.2rem; /* Use rem for letter-spacing */
+  text-decoration: none;
+  padding-top: 0vh; /* Use viewport height for responsiveness */
+  padding-bottom: 10vh;
+  font-family: "Sedan SC", serif;;
+}
+/*adding more margin to heading 1*/
+.head1{
+  margin-top: 50vh;
+}
+   

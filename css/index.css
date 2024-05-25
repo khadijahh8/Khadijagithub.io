@@ -1,0 +1,194 @@
+/*removing margin and padding for all the page*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+/*for all paragraphs */
+p {
+    font-size: 18px;
+}
+/* for first section*/
+.title-box {
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10; /* Ensuring that the title-box is above the background image */
+    padding-top: 200px;
+}
+/* styling heads and button for the title section of webiste*/
+.h1 {
+    font-size: 35px;
+}
+.h2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 4px;
+}
+.button2 {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(176, 104, 104, 1);
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+/* Adding opacity when mouse hovers over All button */
+button:hover, .button2:hover, .button3:hover {
+    opacity: 0.5;
+}
+
+/* Adding opacity when mouse clicks the All button */
+button:active, .button2:active, .button3:active {
+    opacity: 0.8;
+}
+/*the background image div /section*/
+.wallpaper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+/*background image*/
+.background-image {
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Move the background image behind other content */
+}
+/* image replacment inside section 2*/
+.image {
+    position: absolute;
+    width: 50%;
+    height: 50vh;
+    bottom: 10px; /* Adjusted to position the image 20px from the bottom */
+    padding-top: 50%;
+    padding-left: 35%;
+    left: 50%; /* Adjusted to horizontally center the image */
+    transform: translateX(-50%); /* Adjusted to center the image horizontally */
+    z-index: 1;
+}
+/*styling section 2*/
+.section2 {
+    position: relative; /*Enables child absolute postioning relative to this elment*/
+    width: 100%;
+    height: 100vh;
+    background-color: #DBB7AB;
+    border-top: white solid 2px ;
+}
+.section2 .h,.section3 .h{
+    color: rgb(71, 22, 22);
+    padding-top:180px;
+    padding-left:50px ;
+    font-size: 50px;
+    font-family:'Roboto';
+}
+.section2 .p,.section3 .p{
+    color: rgb(0, 0, 0);
+    margin-top:10px;
+    padding-left: 50px;
+    font-family:"Sedan SC", serif;
+    padding-bottom: 7px;
+}
+.button3 {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgba(176, 104, 104, 1);
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 34px;
+    margin-left:48px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+/* styling section 3*/
+.section3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    border-top: #DBB7AB solid 2px ;
+    text-align: center;
+}
+.section3 .h, .section3 .p{
+    padding-left: 0;
+    margin: 0;
+}
+.grid-container {
+    display: grid; /* grid layout */
+    grid-template-columns: auto auto ; /*sets two equal-width colums in the grid*/
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.grid-item {
+    background-color: rgba(176, 104, 104, 1);
+    border: 4px solid rgba(241, 236, 236, 0.8);
+    padding: 90px;
+    margin: 30px;
+    text-align: center;
+ }
+.iconss{
+    width:50px ;
+    height:50px ; 
+}
+.iconhead{
+    margin-top: 10px;
+    color:white;
+    font-family: "Sedan SC", serif;
+}
+.iconp{
+    margin-top: 10px;
+    color:rgb(0, 0, 0);
+    font-family: "Sedan SC", serif;
+}
+p , h1, h2 ,h3,h4,text{
+    text-transform: none; /* Reset text-transform */
+}
+/*fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for the grid items */
+.grid-item {
+    animation: fadeIn 1s ease-in-out;
+}
+/* Hover effect */
+.grid-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* media query for smaller screens*/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}

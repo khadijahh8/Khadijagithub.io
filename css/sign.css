@@ -1,0 +1,101 @@
+body{
+    background-color:#ffffffcc;
+    font-family:'Roboto',sans-serif;
+}
+.logo{
+    width: 100px;
+    align-items: left;
+    margin-left: 36px ;
+    display: inline;
+}
+.signup-box{
+    width: 360px;
+    height:620px;
+    margin:20px;
+    margin-top:36px;
+    background-color: white;
+    border-radius: 3px;
+    flex: 1; /* Takes up half the width */
+}
+h1{
+    text-align: left;
+    padding-top: 2px;
+    margin-left: 36px ;
+    color: #974b4b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+form{
+    width: 300px;
+    margin-left: 36px;
+}
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form label{
+    display: flex;
+    margin-top: 20PX;
+    font-size: 18PX;
+}
+form input {
+    width:100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+input[type="button"]{
+    width:320px;
+    height:35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #dbb7ab;
+    color: white;
+    font-size:18px;
+}
+/* Hover effect */
+input[type="button"]:hover {
+    background-color: #6b4c48; /* Darker green on hover */
+}
+/* Active state effect */
+input[type="butoon"]:active {
+    background-color: #974b4b; /* Darker green on active state */
+}
+p{
+    text-align: left;
+    padding-top: 20px;
+    font-size: 15px;
+    margin-left: 36px ;
+}
+p a{
+    color: brown;
+}
+.paragraph-2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    margin-top: -10px;
+}
+.pargraph-2 a{
+    color: brown;
+}
+
+.signup-container {
+    display: flex;
+}
+
+.signup-box {
+    flex: 1; /* to take up half the width */
+}
+.image-container {
+    flex: 1; /* tot take up the other half of the width */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    align-items: center; /* Center image vertically */
+}
+
+.signup-image {
+    max-width: 100%; /* Ensure image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}

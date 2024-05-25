@@ -1,0 +1,242 @@
+/* Removing margin and padding by default from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+/* Adjusting paragraph styles */
+.pargraph {
+    text-align: left;
+    margin-left: 2%; /* Use percentage for responsiveness */
+    max-width: 90%; /* Use percentage for responsiveness */
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    text-transform: none; /* Reset text-transform */
+    font-size: 20px;   
+}
+/* Adjusting text container styles */
+.text {
+    padding: 7%; /* Use percentage for responsiveness */
+    margin-top: 8rem; /* Add margin-top to create space */
+    font-family: "Sedan SC" ;
+    text-transform: none; /* Reset text-transform */
+}
+/* Adjusting background video styles */
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1;
+}
+
+/* Adjusting text styles */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensures the text appears on top of the video */
+    font-family:"Sedan SC", serif; 
+    text-transform: none; /* Reset text-transform */
+}
+.paragraph {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "Sedan SC", serif;
+    text-transform: none; /* Reset text-transform */
+}
+
+.button2 {
+    background-color: rgba(176, 104, 104, 1);;
+    border: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}  
+/* adding opacity when mouse hover over the button */
+.button2:hover {
+    opacity: 0.5;
+}
+
+/* adding opacity when mouse hover after click the button */
+.button2:active {
+    opacity: 0.8;
+} 
+
+/* Adjusting second section styles */
+.second-section {
+    width: 100%;
+    min-height: 70vh; /* Use viewport height for responsiveness */
+    background-color: #DBB7AB;
+}
+/* Adjusting section header styles */
+.second-section .head1 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem; /* Use rem for letter-spacing */
+    text-decoration: none;
+    padding-top: 10vh; /* Use viewport height for responsiveness */
+    padding-bottom: 10vh;
+    font-family: "Sedan SC", serif;
+    text-transform: none; /* Reset text-transform */
+}
+/* Adjusting grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* making a responsive grid*/
+    gap: 1rem; /* adding gap between items*/
+    padding: 0.5rem; /* rem for padding */
+}
+/* Adding background color to each column in the grid */
+.backgorund {
+    background-color: #f0f0f0; /* Add your desired background color */
+    padding: 1rem; /* Add padding to separate content from the background */
+}
+/* Adjusting image styles */
+.img {
+    width: 100%; /* Make images responsive */
+    height: 100vh; /* Ensure aspect ratio is maintained */
+}
+/* Adjusting heading styles */
+.h {
+    font-size: 1rem; /* Use rem for font size */
+    margin-top: 0.5rem; /* Use rem for margin */
+    text-transform: none; /* Reset text-transform */
+}
+/* Adjusting paragraph styles */
+.p {
+    color: rgb(65, 62, 62);
+    line-height: 1.5;
+    margin-top: 0.5rem; /* Use rem for margin */
+    text-transform: none; /* Reset text-transform */
+}
+
+/* animation for the images */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Styles for each grid item */
+.backgorund {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hover effect */
+.backgorund:hover {
+    transform: scale(1.05);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+/*payment grid*/
+.grid-item {
+    background-color: rgba(176, 104, 104, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.paymenthead{
+    margin: 10px;
+    margin-left: 35px;
+    margin-top:100px;
+    color: rgba(176, 104, 104, 1);
+    font-family: "Sedan SC", serif;  
+    text-transform: none; /* Reset text-transform */
+}
+.paymentp{
+    margin: 10px;
+    margin-left: 35px;
+    margin-bottom: 40px;
+    color:rgb(0, 0, 0);
+    font-family: "Sedan SC", serif;
+    text-transform: none; /* Reset text-transform */
+}
+.payp{
+    font-size: 17px;
+    margin-top: 20px;
+    text-transform: none; /* Reset text-transform */
+}
+.button4{
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-color:white;
+    color: rgba(176, 104, 104, 1);
+    border: none;
+    border-radius: 15px;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+.button4:hover {
+    text-decoration: underline;
+    color: rgb(61, 35, 40);
+}
+.button4:active {
+opacity: 0.5;
+}
+/* Media query for smaller devices */
+@media(max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .head {
+        padding-top: 10vh; /* Adjust padding-top for smaller screens */
+        font-size: 1.6rem; /* Adjust font size for smaller screens */
+    }
+    .pargraph,
+    .text {
+        max-width: 100%; /* Adjust max-width for smaller screens */
+    }
+    .background-image {
+        height: 30vh; /* Adjust height for smaller screens */
+    }
+    .button2 {
+        margin-top: 5vh; /* Adjust margin-top for smaller screens */
+    }
+    .Right {
+        display: none; /* Hide right-aligned content on smaller screens */
+    }
+    .second-section .head1 {
+        padding-top: 5vh; /* Adjust padding-top for smaller screens */
+    }
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid layout for smaller screens */
+    }
+}
